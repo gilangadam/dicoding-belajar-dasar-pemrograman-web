@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+:root {
+    --background-image1: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    --background-image2: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    --light-purple: #E0C3FC;
+    --light-blue: #8ec5fc;
+    --gray: #262626;
+    --light-gray: #414344;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dcdbe0;
+    color: var(--black);
+    line-height: 1.5;
+    height: 3000px;
+}
+
+a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    background: var(--background-image2);
+}
+
+main,
+header {
+    padding: 20px;
+}
+
+header {
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+}
+
+header img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav .logo {
+    width: 100%;
+    max-width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+}
+
+h2,
+h3 {
+    color: var(--light-gray);
+}
+
+.featured-image {
+    width: 100%;
+    height: 80%;
+    max-width: 1000px;
+    min-width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile-data {
+    display: flex;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+footer {
+    padding: 20px;
+    color: var(--light-gray);
+    background-color: #dcdbe0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer>p {
+    background: var(--background-image2);
+}
+
+#profile img {
+    min-width: 50px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    background-color: var(--background-image2);
+}
+
+.custom-shape-divider-top-1596631316 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1596631316 svg {
+    position: relative;
+    display: block;
+    width: calc(197% + 1.3px);
+    height: 180px;
+}
+
+.custom-shape-divider-top-1596631316 .shape-fill {
+    fill: var(--light-blue);
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: : 100%;
+        padding: 0;
+    }
+}
